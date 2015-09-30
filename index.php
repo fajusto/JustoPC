@@ -77,3 +77,5 @@ foreach ($fruta as $valor)
 {
 	print "$valor -";
 }
+
+echo "<br>";
