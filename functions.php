@@ -31,7 +31,7 @@ percorre(50);
 
 echo "<br>";
 
-function incrementa(&$variavel, $valor)
+function incrementa(&$variavel, $valor = 40)  // 40 valor default
 {
 	$variavel += $valor;
 }
@@ -41,4 +41,19 @@ echo $a;
 
 echo "<br>";
 
-//valor default
+
+function Ola() //função com número de argumentos variáveis
+{
+	$argumentos = func_get_args();
+	$quantidade = func_num_args();
+
+	for ($n=0; $n<$quantidade; $n++)
+	{
+		echo 'Olá ' . $argumentos[$n] . "\n <br>";
+	}
+}
+Ola('João', 'Maria', 'José', 'Pedro');
+
+echo "<br>";
+
+

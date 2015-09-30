@@ -1,0 +1,35 @@
+$cd /  // para entrar en diretórios
+$cd - // volta todos os diretórios
+$ls // aparece o que tem dentro
+
+$ sudo apt-get update
+
+$ sudo apt-get // para baixar aquivos
+wget -O Nomedoarquivo.run URL
+chmod +x Nomedoarquivo // para tornar executável
+sudo ./nomedoarquivo // para instalar
+
+:wq salva e sair vim
+
+vim file // para editar aquivo com o vim
+
+$sudo /opt/lampp/lampp start
+
+git remote add phpstudy http://github.com/fajusto/php_studies.git
+
+https://github.com/fajusto/JustoPC.git
+
+git init
+git status
+git add .
+git commit -m " o/ kamehameha --> <o> <-- hadouken \o "
+git remote
+git remote add phpstudy https://github.com/fajusto/php_studies.git
+git push -u origin master
+git clone https://github.com/fajusto/php_studies.git
+git pull -u origin master
+
+
+
+
+
