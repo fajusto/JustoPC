@@ -29,7 +29,15 @@ git push -u origin master
 git clone https://github.com/fajusto/php_studies.git
 git pull -u origin master
 
+//Manipulação de arquivos de diretórios
 
+int fopen (string arquivo, string modo [,int usar_path [, resource contexto]])
+
+Parâmetros     Descrição
+arquivo        String identificando o nome do arquivo a ser aberto.
+modo           Forma de abertura do arquivo (r=read,w=write,a=append).
+usar_path      Se 1 ou TRUE, vasculha a path pelo arquivo a ser aberto.
+contexto       Opções de contexto; variam de acordo com o protocolo do arquivo.
 
 
 

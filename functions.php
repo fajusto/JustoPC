@@ -56,4 +56,14 @@ Ola('João', 'Maria', 'José', 'Pedro');
 
 echo "<br>";
 
+function Fatorial($numero)
+{
+	if ($numero == 1)
+		return $numero;
+	else
+		return $numero * Fatorial($numero -1);
+}
+echo Fatorial(5) . "\n <br>";
+echo Fatorial(7) . "\n <br>";
 
+echo "<br>";
