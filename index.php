@@ -77,5 +77,35 @@ foreach ($fruta as $valor)
 {
 	print "$valor -";
 }
+echo "<br>";
 
 echo "<br>";
+
+// 1.10.1 Declaração
+
+$texto = <<<p
+Optional. Specifies the context of the file handle. 
+Context is a set of options that can modify the 
+behavior of a stream.
+p;
+echo $texto;
+echo "<br>";
+
+echo "<br>";
+ 
+//Concatenação
+
+$fruta = 'maçã';
+
+echo $fruta . ' é a fruta de Adão<br>';
+echo "{$fruta} é a fruta de Adão<br>";
+
+echo "<br>";
+
+$a = 1234;
+
+echo 'O salário é ' . $a . "\n<br>";
+echo "O salário é $a \n<br>";
+
+echo "<br>";
+

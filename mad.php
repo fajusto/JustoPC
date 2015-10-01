@@ -119,7 +119,7 @@ echo "<br>";
 
 //rmdir (Apaga um diretório)
 
-$dir = "/opt/lampp/htdocs/php_studies/Novas Imagens";
+/*$dir = "/opt/lampp/htdocs/php_studies/Novas Imagens";
 if (rmdir($dir))
 {
 	echo "$dir Apagado com sucesso!<br>";
@@ -127,6 +127,21 @@ if (rmdir($dir))
 else
 {
 	echo "$dir Não apagado.<br>";
+}
+
+echo "<br>";*/
+
+//opendir (abre diretório), closedir(libera um recurso alocado pela função opendir), readdir (realiza leitura do opendir())
+
+$diretório = '/';
+if (is_dir($diretório))
+{
+	$ident = opendir($diretório);
+	while ($arquivo = readdir($ident))
+	{
+		echo $arquivo . "\n<br>";
+	}
+	closedir($ident);
 }
 
 echo "<br>";
