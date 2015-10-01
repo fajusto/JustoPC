@@ -67,3 +67,13 @@ echo Fatorial(5) . "\n <br>";
 echo Fatorial(7) . "\n <br>";
 
 echo "<br>";
+
+$arquivo = file ("/opt/lampp/htdocs/php_studies/Comandos");
+
+echo $arquivo[0];
+echo "<br>";
+echo $arquivo[1];
+echo "<br>";
+echo $arquivo[2];
+
+echo "<br>";
