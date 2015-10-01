@@ -109,3 +109,68 @@ echo "O salário é $a \n<br>";
 
 echo "<br>";
 
+//1.11.3 Arrays
+
+$frutas['cor']     = 'vermelha';
+$frutas['sabor']   = 'doce';
+$frutas['formato'] = 'redonda';
+$frutas['nome']    = 'maçã';
+foreach ($frutas as $chave => $frutas)
+
+{
+	echo "$chave => $fruta \n<br>";
+}
+
+echo "<br>";
+
+//acesso
+
+$minha_multa['carro'] = 'Pálio';
+$minha_multa['valor'] = '178.00';
+
+$minha_multa['carro'] .= ' ED 1.0';
+$minha_multa['valor'] += 20;
+
+var_dump($minha_multa);
+echo "<br>";
+
+$comidas[] = 'Lazanha';
+$comidas[] = 'Pizza';
+$comidas[] = 'Macarrão';
+
+$comidas[1] = 'Pizza Calabreza';
+$comidas[0] = 'Lazanha a Bolonhesa';
+
+var_dump($comidas);
+echo "<br>";
+
+echo "<br>";
+
+$carros = array('Pálio' => array('cor'=>'azul',
+	                             'potência'=>'1.0',
+	                             'opcionais'=>'Ar Cond.'),
+				'Corsa' => array('cor'=>'cinza',
+	                             'potência'=>'1.3',
+	                             'opcionais'=>'MP3'),
+				'Gol' => array('cor'=>'branco',
+	                             'potência'=>'1.0',
+	                             'opcionais'=>'Metálica')
+);
+
+echo $carros['Pálio']['opcionais'];
+echo "<br>";
+echo $carros['Gol']['potência'];
+echo "<br>";
+
+echo "<br>";
+
+foreach ($carros as $modelo => $caracteristicas)
+{
+	echo "=> modelo $modelo\n<br>";
+	foreach ($caracteristicas as $caracteristicas => $valor)
+	{
+		echo "caracteristicas $caracteristicas => $valor\n<br>";
+	}
+}
+
+echo "<br>";
