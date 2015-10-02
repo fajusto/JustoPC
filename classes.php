@@ -10,6 +10,7 @@ class Pessoa
 	var $Escolaridade;
 	var $Salario;
 	
+	function Crescer($centimetros)
 	{
 		if ($centimetros > 0)
 		{
