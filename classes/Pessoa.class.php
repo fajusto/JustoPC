@@ -16,4 +16,17 @@ class Pessoa
 			$this->Altura += $centimetros;
 		}
 	}
+    
+    function Formar($titulaçao)
+	{
+		$this->Escolaridade = $titulaçao;
+	}
 
+	function Envelhecer($anos)
+	{
+		if ($anos > 0)
+		{
+			$this->Idade += $anos;
+		}
+	}
+}

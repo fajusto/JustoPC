@@ -12,5 +12,5 @@ $carlos->Idade = 25;
 $carlos->Nascimento = '10/04/1976';
 $carlos->Escolaridade = "Ensino Médio";
 
-echo "Manipulando o objeto $carlos-Nome :\n";
+echo "Manipulando o objeto $carlos->Nome :\n";
 

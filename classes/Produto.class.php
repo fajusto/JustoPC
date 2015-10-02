@@ -2,8 +2,8 @@
 class Produto
 {
 	var $Codigo;
-	var $Descrição;
-	var $Preço;
+	var $Descricao;
+	var $Preco;
 	var $Quantidade;
 
 	function ImprimeEtiqueta()
