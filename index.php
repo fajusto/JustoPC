@@ -248,3 +248,83 @@ else
 echo "<br>";
 
 echo "<br>";
+//1.11.6 sort (Ordena o array pelo seu valor) rsort (Ordem reversa) asort (Ordena pelo valor) ksort (Pelos indices)
+$a = array('cor', 'vermelho', 'volume', '5', 'coca', 'cachorro', 'Fabrício');
+sort($a);
+print_r($a);
+echo "<br>";
+
+echo "<br>";
+//1.11.6 explode (Converte uma string em um array)
+$string = "31/12/2004";
+var_dump(explode("/", $string));
+echo "<br>";
+
+echo "<br>";
+//implode (Converte um array em uma string)
+$padrao = array('Bruna', 'Fabrício', 'Raphael');
+$resultado = implode('-', $padrao);
+
+var_dump($resultado);
+echo "<br>";
+
+echo "<br>";
+//1.12 Manipulação de objetos
+//get_object_vars / get_class
+class Funcionario
+{
+	var $Codigo;
+	var $Nome;
+	var $Salario = 2000;
+	var $Departamento = 'Contabilidade';
+	function SetSalario()
+	{
+	}
+	function GetSalario()
+	{
+	}
+}
+$jose = new Funcionario;
+$jose->Codigo = 44;
+$jose->Nome = '<br>José da Silva<br>';
+$jose->Salario += 500;
+$jose->Departamento = '<br>Financeiro<br>';
+
+print_r(get_object_vars($jose));
+echo "<br>";
+
+$jose = new Funcionario;
+echo get_class($jose);
+echo "<br>";
+
+echo "<br>";
+//Capitulo 2 Orientação a Objetos
+//2.1.2 Produto.class.php
+
+class Produto
+{
+	var $Codigo;
+	var $Descrição;
+	var $Preço;
+	var $Quantidade;
+
+	function ImprimeEtiqueta()
+	{
+		print 'Código:    ' . $this->Codigo . "\n";
+		print 'Descrição: ' . $this->Descricao . "\n";
+	}
+}
+
+include_once 'classes/Produto.class.php';
+
+$produto1 = new Produto;
+$produto2 = new Produto;
+
+$produto1->Codigo = 4001;
+$produto1->Descricao = 'CD - The Best of Eric Clapton';
+
+$produto2->Codigo = 4002;
+$produto2->Descricao = 'CD - The Eagles Hotel California';
+
+$produto1->ImprimeEtiqueta();
+$produto2->ImprimeEtiqueta();
