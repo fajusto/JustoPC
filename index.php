@@ -301,20 +301,6 @@ echo "<br>";
 //Capitulo 2 Orientação a Objetos
 //2.1.2 Produto.class.php
 
-class Produto
-{
-	var $Codigo;
-	var $Descrição;
-	var $Preço;
-	var $Quantidade;
-
-	function ImprimeEtiqueta()
-	{
-		print 'Código:    ' . $this->Codigo . "\n";
-		print 'Descrição: ' . $this->Descricao . "\n";
-	}
-}
-
 include_once 'classes/Produto.class.php';
 
 $produto1 = new Produto;
