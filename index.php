@@ -174,3 +174,77 @@ foreach ($carros as $modelo => $caracteristicas)
 }
 
 echo "<br>";
+
+//array pad 1.11.6
+$a = array("verde", "azul", "vermelho");
+$a = array_pad($a, 8, "branco");
+
+var_dump($a);
+
+echo "<br>";
+
+//arrary_reverse 1.11.6
+echo "<br>";
+$b[0] = 'green';
+$b[1] = 'yellow';
+$b[2] = 'red';
+$b[3] = 'blue';
+$c = array_reverse($b, true);
+var_dump($c);
+echo "<br>";
+
+echo "<br>";
+//array_merge 1.11.6 (Mescla dois arrays)
+$a = array("verde", "azul");
+$b = array("vermelho", "amarelo");
+$d = array("opala", "diplomata");
+$c = array_merge($a, $b, $d);
+
+var_dump($c);
+echo "<br>";
+
+echo "<br>";
+//1.11.6 array_keys (Retorna valores da chave) e array_values (Retorna os valores)
+$exemplo = array('cor' => 'vermelho', 'volume' => '5', 'animal' => 'cachorro');
+$indices = array_keys($exemplo);
+print_r($indices);
+echo "<br>";
+
+echo "<br>";
+$exemplo = array('cor' => 'vermelho', 'volume' => '5', 'animal' => 'cachorro');
+$valores = array_values($exemplo);
+print_r($valores);
+echo "<br>";
+
+echo "<br>";
+//1.11.6 array_slice (extrai uma porção do array)
+$b[0] = 'green';
+$b[1] = 'yellow';
+$b[2] = 'red';
+$b[3] = 'blue';
+$b[4] = 'gray';
+$b[5] = 'white';
+$c = array_slice($b, 0, 4);
+print_r($c);
+echo "<br>";
+
+echo "<br>";
+//1.11.6 count (Conta a quantidade de posições do array)
+$a = array('cor', 'vermelho', 'volume', '5', 'animal', 'cachorro');
+echo 'O array $a contém ' . count($a) . ' posições.';
+echo "<br>";
+
+echo "<br>";
+//1.11.6 array_in (Verifica se um array contém um determinado valor)
+$a = array('cor', 'vermelho', 'volume', '5', 'coca', 'cachorro');
+if (in_array('animal', $a))
+{
+	echo "animal encontrado";
+}
+else
+{
+	echo "animal não encontrado";
+}
+echo "<br>";
+
+echo "<br>";
