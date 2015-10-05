@@ -314,3 +314,8 @@ $produto2->Descricao = 'CD - The Eagles Hotel California';
 
 $produto1->ImprimeEtiqueta();
 $produto2->ImprimeEtiqueta();
+echo "<br>";
+
+echo "<br>";
+
+

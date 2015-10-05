@@ -21,6 +21,7 @@ echo "{$carlos->Nome} é formado em: {$carlos->Escolaridade}\n<br>";
 echo "{$carlos->Nome} possui {$carlos->Idade} anos \n<br>";
 $carlos->Envelhecer(1);
 echo "{$carlos->Nome} possui {$carlos->Idade} anos \n<br>";
+echo "<br>";
 
 
 //Conta Carlos
@@ -43,3 +44,23 @@ echo "O saldo atual é R\$ {$conta_carlos->ObterSaldo()} \n<br>";
 
 $conta_carlos->Retirar(10);
 echo "O saldo atual é R\$ {$conta_carlos->ObterSaldo()} \n<br>";
+echo "<br>";
+
+include_once 'classes/Fornecedor.class.php';
+include_once 'classes/Produto.class.php';
+
+$forcedor =  new Fornecedor;
+$fornecedor->Codigo       = 848;
+$fornecedor->RazaoSocial  = 'Justo e Justo Alimento S.A.';
+$fornecedor->Endereço     = 'Mario Meirelles dos Santos 170';
+$fornecedor->Cidade       = 'São Simão';
+
+$produto = new Produto
+$produto->Codigo      = 462;
+$produto->Descricao   = 'Doce de Abobora';
+$produto->Preco       = 2.50;
+$produto->Quantidade  = 20;
+$produto->Fornecedor  = $fornecedor;
+
+echo 'Código    : ' . $fornecedor->RazaoSocial . "\n";
+
