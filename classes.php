@@ -55,12 +55,20 @@ $fornecedor->RazaoSocial  = 'Justo e Justo Alimento S.A.';
 $fornecedor->Endereço     = 'Mario Meirelles dos Santos 170';
 $fornecedor->Cidade       = 'São Simão';
 
-$produto = new Produto
+$produto = new Produto;
 $produto->Codigo      = 462;
 $produto->Descricao   = 'Doce de Abobora';
 $produto->Preco       = 2.50;
 $produto->Quantidade  = 20;
 $produto->Fornecedor  = $fornecedor;
 
+echo 'Código    : ' . $produto->Codigo . "\n";
+echo "<br>";
+echo 'Produto   : ' . $produto->Descricao . "\n";
+echo "<br>";
+echo 'Código    : ' . $fornecedor->Codigo . "\n";
+echo "<br>";
 echo 'Código    : ' . $fornecedor->RazaoSocial . "\n";
+echo "<br>";
+
 
