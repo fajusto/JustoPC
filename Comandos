@@ -24,7 +24,7 @@ git status
 git add .
 git commit -m " o/ kamehameha --> <o> <-- hadouken \o "
 git remote
-git remote add phpstudy https://github.com/fajusto/php_studies.git
+git remote add ListaTelefonica https://github.com/fajusto/ListaTelefonica.git
 git push -u origin master
 git clone https://github.com/fajusto/php_studies.git
 git pull -u origin master

@@ -54,9 +54,9 @@ if ($result)
 	while ($row = mysql_fetch_assoc($result))
 	{
 
-		if($i == 1) {
-			echo '<pre>';
-			var_dump($row);
+		if($i == 7) {
+			// echo '<pre>';
+			// var_dump($row);
 			break;
 		}
 		echo $row['codigo'] . ' - ' . $row['nome'] . "<br>\n";
@@ -67,3 +67,23 @@ if ($result)
 }
 
 mysql_close($conn);
+
+// define('DB_DRIVER', 'mysql');
+// define('DB_HOST', 'localhost');
+// define('DB_USER', 'root');
+// define('DB_PWD', '');
+// define('DB_DATABASE', 'livro');
+
+// try {
+//     $pdo = new PDO(DB_DRIVER.':host='.DB_HOST.';dbname='.DB_DATABASE, DB_USER, DB_PWD);
+            
+//     if ($pdo) {
+//         echo "Conexão realizada com sucesso!";
+//     } else {
+//         echo "Problemas na conexão!";
+//     }
+// } catch (PDOException $exc) {
+//     echo "Problemas na conexão!";
+//     echo $exc->getMessage();
+// }
+
